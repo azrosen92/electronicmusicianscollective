@@ -1,0 +1,942 @@
+/*
+Theme Name: Exact
+Author: Hannah Owen
+Author URI: http://www.electricthemes.co.uk
+Theme URI: http://www.electricthemes.co.uk/exact
+Description: Exact is a free clean WordPress theme with custom header, background, menu and widget features - clean, fast loading and displays a featured image for each post (240px by 240px) to give a simple yet consistent feel to your website. It is very easy to customise and supports widgets, a custom menu, backgrounds and header images - so you can customise your website as much as you need.  More info on the theme can be found in readme.txt
+Version: 1.02
+Tags: white, light, fixed-width, featured-images, custom-background, custom-header, custom-menu, photoblogging, microformats
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Exact WordPress Theme, Copyright 2013 ElectricThemes.co.uk
+Exact is distributed under the terms of the GNU GPL
+*/
+html, body	{
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	text-shadow: #FFFFFF 0px 0px 3px;
+}
+#header	{
+	background: url(img/header_bg.png) top center no-repeat;
+	margin: 0px auto 0px auto;
+	padding: 32px 32px 2px 32px;
+	position: relative;
+	width: 966px;
+}
+#headertitle	{
+	background: url(img/menu.png) top center no-repeat;
+	margin: 0px auto 2px auto;
+	overflow: hidden;
+	padding: 0px 15px 0px 15px;
+	position: relative;
+	text-align: center;
+	width: 936px;
+}
+#headertitle h1	{
+	color: #000000;
+	font-size: 13px;
+	margin: 0px;
+	padding: 6px 0px 6px 0px;
+}
+#headertitle h1 a	{
+	color: #000000;
+	text-decoration: none;
+}
+#headertitle h1 a:hover	{
+	color: #004488;
+	text-decoration: none;
+}
+#headerimage	{
+	height: 140px;
+	margin: 0px 0px 0px 0px;
+	overflow: hidden;
+	width: 966px;
+}
+#headerimage img,
+#headerimage img a	{
+	border:0px;
+}
+#headermenu	{
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	width: 966px;
+}
+#headermenu ul	{
+	background: url(img/menu.png) top center no-repeat;
+	display: block;
+	list-style-type: none;
+	margin: 0px;
+	min-height: 32px;
+	min-width: 966px;
+	padding: 0px;
+	white-space: nowrap;
+}
+#headermenu ul li	{
+	background: inherit;
+	border: 0px;
+	color: #000000;
+	float: left;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0;
+	padding: 7px 0px 8px 0px;
+}
+#headermenu ul li a,
+#menu ul li a:link	{
+	border: 0px;
+	color: #000000;
+	margin: 0;
+	padding: 7px 10px 8px 10px;
+	text-decoration: none;
+}
+#headermenu ul li a:hover	{
+	color: #004488;
+}
+#page	{
+	background: url(img/page_bg.png) top center repeat-y;
+	margin: 0px auto 0px auto;
+	padding: 0px 32px 0px 32px;
+	text-align: left;
+	width: 966px;
+}
+#leftcol	{
+	float: left;
+	margin: 2px 0px 0px 0px;
+	position: relative;
+	width: 240px;
+	word-wrap: break-word;
+}
+#leftcol h2	{
+	background: url(img/side_header.png) top center no-repeat;
+	clear: left;
+	float: left;
+	font-size: 13px;
+	margin: 0px;
+	padding: 7px 10px 7px 10px;
+	position: relative;
+	width: 220px;
+}
+#leftcol a	{
+	color: #000000;
+	text-decoration: none;
+}
+#leftcol a:hover	{
+	color: #004488;
+	text-decoration: none;
+}
+#leftcol ul	{
+	clear: left;
+	list-style: none;
+	margin: 5px auto 5px auto;
+	padding: 0px 0px 0px 0px;
+	width: 240px;
+}
+#leftcol ul li	{
+	display: block;
+	font-size: 12px;
+	margin: 0px 0px 0px 0px;
+}
+#leftcol ul li a	{
+	color: #000000;
+	display: block;
+	font-weight: bold;
+	margin: 0px 0px 0px 0px;
+	padding: 6px 5px 6px 10px;
+	text-decoration: none;
+	vertical-align: bottom;
+}
+#leftcol ul li a:hover	{
+	color: #004488;
+	text-decoration: none;
+}
+#leftcol ul li ul	{
+	clear: left;
+	list-style: none;
+	margin: 0px auto 5px auto;
+	padding: 0px 0px 0px 0px;
+}
+#leftcol ul li ul li	{
+	display: block;
+	margin: 0px 0px 0px 0px;
+}
+#leftcol ul li ul li a	{
+	display: block;
+	margin: 0px;
+	padding: 6px 5px 6px 25px;
+	text-decoration: none;
+	vertical-align: bottom;
+}
+#leftcol ul li ul li a:hover	{
+	text-decoration: none;
+}
+#leftcol ul li ul li ul	{
+	clear: left;
+	list-style: none;
+	margin: 0px auto 5px auto;
+	padding: 0px 0px 0px 0px;
+}
+#leftcol ul li ul li ul li	{
+	display: block;
+	margin: 0px 0px 0px 0px;
+}
+#leftcol ul li ul li ul li a	{
+	display: block;
+	margin: 0px;
+	padding: 6px 5px 6px 40px;
+	text-decoration: none;
+	vertical-align: bottom;
+}
+#leftcol ul li ul li ul li a:hover	{
+	text-decoration: none;
+}
+#leftcol ul li ul li ul li ul	{
+	clear: left;
+	list-style: none;
+	margin: 0px auto 5px auto;
+	padding: 0px 0px 0px 0px;
+}
+#leftcol ul li ul li ul li ul li	{
+	display: block;
+	margin: 0px 0px 0px 0px;
+}
+#leftcol ul li ul li ul li ul li a	{
+	display: block;
+	margin: 0px;
+	padding: 6px 5px 6px 55px;
+	text-decoration: none;
+	vertical-align: bottom;
+}
+#leftcol ul li ul li ul li ul li a:hover	{
+	text-decoration: none;
+}
+#leftcol img	{ 
+	max-width: 100%; height: auto;
+}
+
+
+
+#maincol	{
+	background: url(img/content_header.png) top right no-repeat;
+	display: inline;
+	float: right;
+	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden;
+	padding: 0px 0px 0px 0px;
+	position: relative;
+	width: 726px;
+	word-wrap: break-word;
+}
+#maincol img	{
+max-width: 100%;
+}
+#homecontentarea	{
+	background: url(img/home_content_footer.png) bottom center no-repeat;
+	margin: 0px 0px 0px 2px;
+	padding: 30px 30px 30px 30px;
+	width: 664px;
+}
+#posts	{
+	display: inline;
+	float: right;
+	position: relative;
+	width: 726px;
+}
+.postcontainer	{
+	background: url(img/post_background.png) bottom right no-repeat #FFFFFF;
+	display: block;
+	float: left;
+	height: 340px;
+	overflow: hidden;
+	padding: 2px 0px 0px 2px;
+	width: 240px;
+}
+.postimage	{
+	display: block;
+	float: left;
+	height: 240px;
+	margin: 0px;
+	overflow: hidden;
+	width: 240px;
+}
+.postimage img	{
+	border:0px;
+}	
+.postimage img a	{
+	border: 0px;
+	height: 240px;
+	width: 240px;
+}
+.posttitle	{
+	display: block;
+	float: left;
+	height: 67px;
+	margin: 0px;
+	overflow: hidden;
+	padding: 0px;
+	width: 240px;
+}
+.posttitle h2	{
+	color: #000000;
+	font-size: 12px;
+	margin: 0px;
+	padding: 5px 0px 0px 9px;
+	text-decoration: none;
+}
+.posttitle h2 a	{
+	color: #000000;
+	text-decoration: none;
+}
+.posttitle h2 a:hover	{
+	color: #004488;
+	text-decoration: none;
+}
+.postdate	{
+	color: #000000;
+	display: block;
+	float: left;
+	font-size: 11px;
+	font-weight: bold;
+	height: 24px;
+	margin: 0px;
+	overflow: hidden;
+	padding: 9px 0px 0px 9px;
+	width: 111px;
+}
+.postcomments	{
+	color: #000000;
+	display: block;
+	float: right;
+	font-size: 11px;
+	font-weight: bold;
+	height: 24px;
+	margin: 0px;
+	overflow: hidden;
+	padding: 9px 9px 0px 0px;
+	text-align: right;
+	width: 111px;
+}
+.postcomments a	{
+	color: #000000;
+	text-decoration: none;
+}
+.postcomments a:hover	{
+	color: #004488;
+	text-decoration: none;
+}
+#footer	{
+	background: url(img/footer.png) top center no-repeat;
+	clear: both;
+	height: 32px;
+	margin: 0px auto 0px auto;
+	padding: 32px 32px 30px 32px;
+	width: 966px;
+}
+#footerleft	{
+	float: left;
+	height: 32px;
+	margin: 0px 0px 0px 0px;
+	position: relative;
+	width: 35px;
+}
+#footerleft h6	{
+	float: left;
+	height: 32px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	width: 35px;
+}
+#footerleft h6 a	{
+	background: url(img/electric.png) top left no-repeat;
+	display: block;
+	height: 32px;
+	width: 35px;
+}
+#footerleft h6 a:hover	{
+	background-position: -35px 0px;
+	display: block;
+	height: 32px;
+	width: 35px;
+}
+#footerleft h6 span	{
+	display: none;
+}
+#footerright	{
+	float: right;
+	height: 32px;
+	margin: 0px 0px 0px 0px;
+	position: relative;
+	width: 35px;
+}
+#footerright h6	{
+	float: right;
+	height: 32px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	width: 35px;
+}
+#footerright h6 a	{
+	background: url(img/wordpress.png) top left no-repeat;
+	display: block;
+	height: 32px;
+	width: 35px;
+}
+#footerright h6 a:hover	{
+	background-position: -35px 0px;
+	display: block;
+	height: 32px;
+	width: 35px;
+}
+#footerright h6 span	{
+	display: none;
+}
+#footertext	{
+	color: #000000;
+	float: left;
+	font-size: 12px;
+	height: 25px;
+	margin: 0px;
+	padding: 7px 0px 0px 0px;
+	width: 896px;
+}
+.clearfix:after	{
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+.clearfix	{
+	display: inline-block;
+}
+* html .clearfix	{
+	height: 1%;
+}
+.clearfix	{
+	display: block;
+}
+@media print	{
+	#leftcol
+	{
+		display: none;
+	}
+	#twocols, #maincol
+	{
+		float: none;
+		width: 100%;
+	}
+}
+#pageheader	{
+	background: url(img/home_content_footer.png) bottom right no-repeat;
+	padding: 25px 30px 14px 30px;
+}
+#pagecontent	{
+	font-size: 13px;
+	padding: 25px 30px 0px 30px;
+}
+#pagecontent h1,
+#pageheader h1	{
+	clear: both;
+	color: #000000;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+}
+#pagecontent h1 a	{
+	text-decoration: none;
+}
+#pagecontent h1 a:hover	{
+	color: #333333;
+	text-decoration: none;
+}
+#pagecontent h2	{
+	clear: both;
+	color: #000000;
+	font-size: 13px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+}
+#pagecontent h3	{
+	clear: both;
+	color: #000000;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+}
+#pagecontent h4	{
+	clear: both;
+	color: #000000;
+	font-size: 11px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+}
+#pagecontent h5	{
+	clear: both;
+	color: #000000;
+	font-size: 10px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+}
+#pagecontent h6	{
+	clear: both;
+	color: #000000;
+	font-size: 9px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+}
+#pagecontent p	{
+	color: #000000;
+	font-size: 13px;
+	line-height: 1.7em;
+	margin: 0px 0px 20px 0px;
+}
+#pagecontent p a:hover	{
+	text-decoration: none;
+}
+#pagecontent a	{
+	color: #000000;
+}
+#pagecontent a:hover	{
+	color: #990000;
+	text-decoration: none;
+}
+#pagecontent ul	{
+	font-size: 13px;
+	line-height: 1.7em;
+	padding: 0px 0px 0px 20px;
+}
+#pagecontent ol	{
+	font-size: 13px;
+	line-height: 1.7em;
+	padding: 0px 0px 0px 20px;
+}
+.divider	{
+	background: url(img/divider.png) top center no-repeat;
+	clear: both;
+	display: block;
+	float: left;
+	height: 30px;
+	margin: 20px 0px 0px 0px;
+	width: 666px;
+}
+.textwidget	{
+	font-size: 13px;
+	max-width: 220px;
+	overflow-x: hidden;
+	padding: 10px;
+	width: 220px;
+}
+.widget	{
+	clear: both;
+	max-width: 240px;
+	overflow-x: hidden;
+	width: 240px;
+}
+.postfooter	{
+	clear: both;
+	padding: 0px 0px 0px 0px;
+}
+#postnavigation	{
+	clear: both;
+	display: block;
+	font-weight: bold;
+	margin: 0px auto 0px auto;
+	padding: 0px 0px 0px 0px;
+	width: 90%;
+	word-wrap: break-word;
+}
+#previousposts	{
+	clear: left;
+	display: block;
+	float: left;
+	text-align: left;
+	width: 50%;
+	word-wrap: break-word;
+}
+#previousposts a	{
+	clear: left;
+	color: #000000;
+	display: block;
+	font-size: 12px;
+	overflow-x: hidden;
+	text-align: left;
+	text-decoration: none;
+}
+#previousposts a:hover	{
+	color: #990000;
+	text-decoration: none;
+}
+#nextposts	{
+	clear: right;
+	display: block;
+	float: right;
+	text-align: right;
+	width: 50%;
+	}
+#nextposts a	{
+	clear: right;
+	color: #000000;
+	display: block;
+	font-size: 12px;
+	overflow-x: hidden;
+	text-align: right;
+	text-decoration: none;
+}
+#nextposts a:hover	{
+	color: #990000;
+	text-decoration: none;
+}
+.tagcloud	{
+	padding: 10px;
+}
+#widgetsearch	{
+	float:left;
+	clear:left;
+	font-size: 13px;
+	padding: 10px 10px 10px 10px;
+	width: 220px;
+}
+ul#recentcomments	{
+	float:left;
+	clear:left;
+	padding: 10px;
+	width:220px;
+}
+#calendar_wrap	{
+	clear: both;
+	margin: 20px auto 20px auto;
+	overflow: hidden;
+	text-align: center;
+	width: 230px;
+}
+#wp-calendar	{
+	clear: both;
+	color: #000000;
+	font-family: "arial";
+	font-size: 12px;
+	margin: 6px auto 6px auto;
+	padding: 0px 10px 0px 10px;
+	text-align: center;
+	text-decoration: none;
+	width: 210px;
+}
+#wp-calendar a	{
+	color: #000000;
+	text-decoration: none;
+}
+#wp-calendar a:hover	{
+	color: #990000;
+	text-decoration: none;
+}
+blockquote	{
+	margin: 20px;
+	padding: 8px 8px 8px 15px;
+}
+blockquote p	{
+	background-color: inherit;
+	color: #000000;
+	font-size: 0.9em;
+	line-height: 1.3em;
+}
+label	{
+	background-color: inherit;
+	color: #000000;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+table#wp-calendar	{
+	margin: 0 0 20px;
+	width: 140px;
+}
+code	{
+	display: inline;
+	font-size: 1.2em;
+	margin: 5px 0 15px 0;
+	padding: 5px 5px 5px 8px;
+}
+img.centered	{
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+}
+img.alignright	{
+	display: inline;
+	margin: 0px 0px 10px 10px;
+	padding: 4px;
+}
+img.alignleft	{
+	display: inline;
+	margin: 0px 10px 10px 0px;
+	padding: 4px;
+}
+.aligncenter	{
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.alignright	{
+	display: inline;
+	float: right;
+}
+.alignleft	{
+	display: inline;
+	float: left;
+}
+.alignnone	{
+	clear: both;
+	display: block;
+}
+.left	{
+	border: 1px solid #cccccc;
+	float: left;
+	margin: 10px 15px 10px 0;
+}
+.right	{
+	border: 1px solid #cccccc;
+	float: right;
+	margin: 10px 0 5px 10px;
+}
+.center	{
+	border: 1px solid #aaaaaa;
+	margin: 5px auto 12px;
+	text-align: center;
+}
+.textright	{
+	text-align: right;
+}
+.small	{
+	font-size: 0.8em;
+}
+.bold	{
+	font-weight: bold;
+}
+.hide	{
+	display: none;
+}
+.post	{
+	margin: 0px;
+}
+.wp-caption-text	{
+	color: #000000;
+}
+.sticky	{
+	color: #000000;
+}
+.gallery-caption	{
+	color: #000000;
+}
+#comments	{
+	clear: both;
+}
+#comments .navigation	{
+	padding: 0 0 18px 0;
+}
+h3#comments-title,
+h3#reply-title	{
+	color: #000000;
+	margin-bottom: 0;
+}
+h3#comments-title	{
+	padding: 24px 0;
+}
+.commentlist	{
+	list-style: none;
+	margin: 0;
+}
+.commentlist li.comment	{
+	border-bottom: 1px solid #e7e7e7;
+	line-height: 24px;
+	margin: 0 0 24px 0;
+	padding: 0 0 0 56px;
+	position: relative;
+}
+.commentlist li:last-child	{
+	border-bottom: none;
+	margin-bottom: 0;
+}
+#comments .comment-body ul,
+#comments .comment-body ol	{
+	margin-bottom: 18px;
+}
+#comments .comment-body p:last-child	{
+	margin-bottom: 6px;
+}
+#comments .comment-body blockquote p:last-child	{
+	margin-bottom: 24px;
+}
+.commentlist ol	{
+	list-style: decimal;
+}
+.commentlist .avatar	{
+	left: 0;
+	position: absolute;
+	top: 4px;
+}
+.comment-author	{
+}
+.comment-author cite	{
+	color: #000000;
+	font-style: normal;
+	font-weight: bold;
+}
+.comment-author .says	{
+	font-style: italic;
+}
+.comment-meta	{
+	font-size: 12px;
+	margin: 0 0 18px 0;
+}
+.comment-meta a:link,
+.comment-meta a:visited	{
+	color: #000000;
+	text-decoration: none;
+}
+.comment-meta a:active,
+.comment-meta a:hover	{
+	color: #990000;
+}
+.commentlist .even	{
+}
+.commentlist .bypostauthor	{
+}
+.reply	{
+	font-size: 12px;
+	padding: 0 0 24px 0;
+}
+.reply a,
+a.comment-edit-link	{
+	color: #000000;
+}
+.reply a:hover,
+a.comment-edit-link:hover	{
+	color: #990000;
+}
+.commentlist .children	{
+	list-style: none;
+	margin: 0;
+}
+.commentlist .children li	{
+	border: none;
+	margin: 0;
+}
+.nopassword,
+.nocomments	{
+	display: none;
+}
+#comments .pingback	{
+	border-bottom: 1px solid #e7e7e7;
+	margin-bottom: 18px;
+	padding-bottom: 18px;
+}
+.commentlist li.comment+li.pingback	{
+	margin-top: -6px;
+}
+#comments .pingback p	{
+	color: #000000;
+	display: block;
+	font-size: 12px;
+	line-height: 18px;
+	margin: 0;
+}
+#comments .pingback .url	{
+	font-size: 13px;
+	font-style: italic;
+}
+input[type=submit]	{
+	color: #000000;
+}
+#respond	{
+	border-top: 1px solid #e7e7e7;
+	margin: 24px 0;
+	overflow: hidden;
+	position: relative;
+}
+#respond p	{
+	margin: 0;
+}
+#respond .comment-notes	{
+	margin-bottom: 1em;
+}
+.form-allowed-tags	{
+	line-height: 1em;
+}
+.children #respond	{
+	margin: 0 48px 0 0;
+}
+h3#reply-title	{
+	margin: 18px 0;
+}
+#comments-list
+#respond	{
+	margin: 0 0 18px 0;
+}
+#comments-list ul #respond	{
+	margin: 0;
+}
+#cancel-comment-reply-link	{
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 18px;
+}
+#respond .required	{
+	color: #000000;
+	font-weight: bold;
+}
+#respond label	{
+	color: #000000;
+	font-size: 12px;
+}
+#respond input	{
+	margin: 0 0 9px;
+	width: 98%;
+}
+#respond textarea	{
+	width: 98%;
+}
+#respond .form-allowed-tags	{
+	color: #000000;
+	font-size: 12px;
+	line-height: 18px;
+}
+#respond .form-allowed-tags code	{
+	font-size: 11px;
+}
+#respond .form-submit	{
+	margin: 12px 0;
+}
+#respond .form-submit input	{
+	font-size: 14px;
+	width: auto;
+}
+.wp-caption	{
+	padding-top: 4px;
+	text-align: center;
+	max-width: 100%;
+}
+.wp-caption-dd	{
+	font-size: 11px;
+	line-height: 17px;
+	margin: 0;
+	padding: 0 4px 5px;
+}
+.wp-caption img	{
+	display: block;
+	margin: 0 auto;
+	max-width: 98%;
+}
